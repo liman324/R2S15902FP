@@ -53,7 +53,7 @@ void Slot1(int in, int out_gain, int att, bool R_L_in, int bass, int treb, int i
     digitalWrite(DATA, LOW);
     digitalWrite(CLK, LOW);}
   //   SL/ SR/ C/ SW Input  || 17 bit 
-    digitalWrite(DATA, R_L_in); // 1
+    digitalWrite(DATA, R_L_in); // 0 IN Stereo / 1 IN 5.1
     digitalWrite(CLK, HIGH);
     digitalWrite(DATA, LOW);
     digitalWrite(CLK, LOW);
